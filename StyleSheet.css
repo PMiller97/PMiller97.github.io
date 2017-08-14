@@ -1,6 +1,6 @@
 ﻿#top {
-    background-image: url('images/backgroundPM.jpg');
-    background-color:rgba(0,0,0,0.7)
+    background-image: url('images/portfolioBackground.jpg');
+    background-color: rgba(0,0,0,0.7);
 }
 /*!
  * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
@@ -26,13 +26,14 @@ body {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    color:red;
+    color:black;
 
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
     font-size: 4.5em;
     font-weight: 700;
+    color:black;
 }
 
 /* Custom Button Styles */

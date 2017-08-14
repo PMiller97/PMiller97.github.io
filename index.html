@@ -40,7 +40,7 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+                <a href="#top" onclick=$("#menu-close").click();>Paige Miller</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -49,13 +49,10 @@
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>hello</a>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-            </li>
-            <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#footer" onclick=$("#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -65,25 +62,28 @@
         <div class="text-vertical-center">
             <h1>Paige Miller</h1>
             <br />
-            <h3>Software Developer</h3>
+            <br />
+            <h2>Software Developer</h2>
             <br>
         </div>
     </header>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="background-color:gray;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-md-4">
+                    <img src="images/rsz_imageedit_2_4713095664.gif" />
+                </div>
+                <div class="col-lg-8 text-center">
                     <h2>About Me</h2>
-                    <p class="lead">This theme features some wonderful photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
+                    <p class="lead">Hello, my name is Paige. I am a Software Developer, residing in Canton, Ohio. I've been in retail for the past 4 years, up until my store closed. At that point in time, I decided I needed to get a start on my career. I've always loved designing, which in my retail experience would have been the visualizing. My brother-in-law is a Database Administrator, and for years he would show me the websites he could create. I always thought what he could was so cool, and he was my entire inspiration in my interst in developing. I was so excited to find out about this amazing oppurtunity to become a junior developer through WeCanCodeIt's program. I have acquired so many skills I never thought possible to learn in such a short period. Skills including  C#, .NET, ASP.net, MVC, HTML, JavaScript, JQuery, Bootstrap, and CSS.
                 </div>
             </div>
             <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>
-
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -93,71 +93,172 @@
                     <h2>Web Developing</h2>
                     <hr class="small">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="images/TuscanyVilla.png" style="width:457px; height:228px; border:double;">
-                                </a>
-                                <h1>Tuscany Villa</h1>
+
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img class="img-portfolio img-responsive" src="images/TuscanyVilla.png" style="border:double;">
+                                    <div class="carousel-caption">
+                                        <h1>Tuscany Villa</h1>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://github.com/PMiller97/TuscanyVilla"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="img-portfolio img-responsive" src="images/Wardrobe.png" style="border:double;" />
+                                    <div class="carousel-caption">
+                                        <h1>Wardrobe MVC</h1>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://github.com/PMiller97/WardrobeMVC2"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                ...
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="#">
-                                    <img class="img-portfolio img-responsive" src="images/Wardrobe.png" style="border:double;">
-                                </a>
-                                <h1>Wardrobe MVC</h1>
-                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
+                </div>
+                <!--<div class="col-md-6">
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img class="img-portfolio img-responsive" src="images/TuscanyVilla.png" style="width:457px; height:228px; border:double;">
+                    </a>
+                    <h1>Tuscany Villa</h1>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/PMiller97/TuscanyVilla"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-item">
+                    <a href="#">
+                        <img class="img-portfolio img-responsive" src="images/Wardrobe.png" style="border:double;">
+                    </a>
+                    <h1>Wardrobe MVC</h1>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/PMiller97/WardrobeMVC2"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>-->
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Software Developing</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
 
-                        <div class="col-lg-10 col-lg-offset-1 text-center">
-                            <h2>Software Developing</h2>
-                            <hr class="small">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="portfolio-item">
-                                        <a href="#">
-                                            <img class="img-portfolio img-responsive" src="images/BankAccount.png" />
-                                        </a>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img class="img-portfolio img-responsive" src="images/BankAccount.png" />
+                                    <div class="carousel-caption">
                                         <h1>Bank Account</h1>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://github.com/PMiller97/BankAccount"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="portfolio-item">
-                                        <a href="#">
-                                            <img class="img-portfolio img-responsive" src="images/LuckyNumbers.png" />
-                                        </a>
+                                <div class="item">
+                                    <img class="img-portfolio img-responsive" src="images/LuckyNumbers.png" />
+                                    <div class="carousel-caption">
                                         <h1>Lucky Numbers</h1>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://github.com/PMiller97/LuckyNumbers"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
+                                </div>
+                                ...
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!--<div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="images/BankAccount.png" />
+                                    </a>
+                                    <h1>Bank Account</h1>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="https://github.com/PMiller97/BankAccount"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                    <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                            <div class="col-md-6">
+                                <div class="portfolio-item">
+                                    <a href="#">
+                                        <img class="img-portfolio img-responsive" src="images/LuckyNumbers.png" />
+                                    </a>
+                                    <h1>Lucky Numbers</h1>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <a href="https://github.com/PMiller97/LuckyNumbers"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                <!-- /.row (nested) -->
+                        <a href="#" class="btn btn-dark">View More Items</a>
+                    </div>
+                    <!-- /.col-lg-10 -->
                 </div>
-                <!-- /.col-lg-10 -->
+                <!-- /.row -->
             </div>
-            <!-- /.row -->
-        </div>
         <!-- /.container -->
     </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" id="footer" style="background-color:gray;">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4><strong>Paige Miller</strong>
